@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:paddingTop="75dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M M M University of Technology"
+                        android:textColor="#fff"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gorakhpur, UP"
+                        android:textColor="#fff"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="24dp"
+
+                        android:layout_gravity="center_horizontal"
+                        />
+
+                    <View
+                        android:layout_width="180dp"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/grey"
+                        />
+
+                </LinearLayout>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginTop="-60dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginHorizontal="24dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Log In"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:layout_margin="16dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/textColor"
+
+                            />
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="12dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                            >
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:id="@+id/logEmail"
+
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:passwordToggleEnabled="true"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                            android:layout_marginTop="12dp"
+                            >
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:id="@+id/logPass"
+
+                                />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Not yet registered ?"
+                                android:textColor="@color/textColor"
+                                android:fontFamily="sans-serif"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Register here"
+                                android:textColor="@android:color/holo_blue_light"
+                                android:layout_marginLeft="8dp"
+                                android:id="@+id/openReg"
+                                android:fontFamily="monospace"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Forget Password"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:id="@+id/openForgetPass"
+                            android:fontFamily="monospace"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Log In"
+                    android:id="@+id/loginBtn"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginBottom="24dp"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

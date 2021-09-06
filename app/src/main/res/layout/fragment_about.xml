@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="48dp"
+    tools:context=".ui.about.AboutFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="220dp"
+          android:scaleType="fitXY"
+          android:id="@+id/college_image"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/about_college"
+          android:layout_marginTop="@dimen/text_margin"
+          android:textSize="@dimen/text_size"
+          android:layout_marginHorizontal="@dimen/text_margin"
+          android:layout_gravity="center"
+          android:textColor="@color/textColor"
+          android:fontFamily="@string/light"
+          />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="@dimen/text_margin"
+          >
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_label"
+
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Green Environment"
+              android:layout_marginLeft="@dimen/text_margin"
+              android:textSize="@dimen/text_size"
+              android:textColor="@color/textColor"
+              android:fontFamily="@string/bold"
+              />
+
+      </LinearLayout>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Branches"
+          android:layout_marginTop="36dp"
+          android:textSize="@dimen/title_size"
+          android:layout_gravity="center"
+          android:textColor="@color/textColor"
+          android:fontFamily="@string/bold"
+          />
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginHorizontal="60dp"
+          android:background="@color/grey"/>
+      <androidx.viewpager.widget.ViewPager
+          android:layout_width="match_parent"
+          android:layout_height="250dp"
+          android:layout_marginTop="@dimen/text_margin"
+          android:foregroundGravity="center"
+          android:clipToPadding="false"
+          android:overScrollMode="never"
+          android:id="@+id/viewPager"/>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="@dimen/text_margin"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Contact Details"
+              android:layout_marginTop="36dp"
+              android:textSize="@dimen/title_size"
+              android:layout_gravity="center"
+              android:textColor="@color/textColor"
+              android:fontFamily="@string/bold"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="M M M University of Technology,"
+              android:layout_marginTop="@dimen/text_margin"
+              android:textSize="@dimen/text_size"
+              android:layout_marginHorizontal="@dimen/text_margin"
+              android:textColor="@color/textColor"
+              android:textStyle="bold"
+              android:fontFamily="@string/light"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Deoria Road, Singhariya, Kunraghat, Gorakhpur, Uttar Pradesh 273016"
+              android:layout_marginTop="8dp"
+              android:textSize="@dimen/text_size"
+              android:layout_marginHorizontal="@dimen/text_margin"
+              android:textColor="@color/textColor"
+              android:fontFamily="@string/light"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Phone: 0551 227 3958"
+              android:textSize="@dimen/text_size"
+              android:layout_marginTop="5dp"
+              android:layout_marginHorizontal="@dimen/text_margin"
+              android:textColor="@color/textColor"
+              android:fontFamily="@string/light"
+              />
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="300dp"
+              android:layout_marginBottom="32dp"
+              android:src="@drawable/address"
+              android:id="@+id/map"/>
+
+
+      </LinearLayout>
+
+  </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>
